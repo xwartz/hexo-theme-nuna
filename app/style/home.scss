@@ -1,0 +1,98 @@
+
+.home {
+
+    .entry-header {
+        padding: 2rem 0;
+
+        p {
+            font-size: 1.22rem;
+            color: #878787;
+        }
+    }
+}
+
+.entry-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -3%;
+    margin-right: -0.1%;
+
+    article {
+        position: relative;
+        width: 290px;
+        height: 290px;
+        margin-top: 3%;
+        margin-left: 3%;
+        overflow: hidden;
+        flex: 1 0 auto;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        &:hover {
+            .post-description {
+                display: block;
+            }
+
+            > a {
+                opacity: 1;
+            }
+        }
+
+        .post-thumb {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        > a {
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0.5rem;
+            overflow: hidden;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.4);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            code, pre {
+                background-color: transparent;
+            }
+
+            > h2, p {
+                margin: 0;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.paginator {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.all {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;
+    color: $black;
+}

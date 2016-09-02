@@ -1,0 +1,29 @@
+.archive {
+    max-width: 762px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: $border;
+    border-radius: 3px;
+    background-color: #fff;
+
+    .entry-header,
+    article {
+        padding: 0 2rem;
+    }
+
+    .entry-header {
+        border-top: $border;
+        border-bottom: $border;
+
+        &:first-of-type {
+            border-top: none;
+        }
+
+    }
+
+    article {
+        > a {
+            display: block;
+        }
+    }
+}

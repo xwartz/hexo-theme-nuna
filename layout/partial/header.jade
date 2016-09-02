@@ -1,0 +1,13 @@
+header
+    .container
+        a.logo(href=url_for())
+            img(src=url_for(theme.logo))
+
+        span(class='span-holder')
+
+        nav
+            each value, key in theme.menu
+                - var re = /^(http|https):\/\/*/gi;
+                - var tar = re.test(value) ? '_blank' : '_self'
+                a(href=url_for(value) target=tar)
+                    i(class='fa icon-#{key}')

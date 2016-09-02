@@ -1,0 +1,145 @@
+$gray: #999;
+
+.post {
+
+    article {
+        font-size: 1.1rem;
+        background-color: #fff;
+    }
+
+    .container {
+        max-width: 760px;
+    }
+
+    .entry-cover {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 40vh;
+        min-height: 10rem;
+    }
+
+    .entry-header {
+        border-bottom: $border;
+        padding: 4rem 0 1rem;
+    }
+
+    .entry-description {
+        color: #787878;
+    }
+
+    .entry-meta {
+        color: $gray;
+        font-size: 0.9rem;
+        font-family: "Optima", "Helvetica Neue", sans-serif;
+
+        time::after {
+            content: " — ";
+        }
+
+        em {
+            color: $gray;
+        }
+    }
+
+
+    .entry-content {
+        h1, h2, h3,
+        h4, h5, h6 {
+            position: relative;
+            margin: 1em 0;
+
+            &:before {
+                display: none;
+                position: absolute;
+                top: -4px;
+                left: -0.7em;
+                content: '#';
+                color: $green;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+
+            &:hover {
+                &:before {
+                    display: block;
+                }
+            }
+        }
+
+        .headerlink {
+            position: absolute;
+            left: -0.7em;
+            top: -4px;
+            width: 1.5rem;
+            height: 3rem;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-bottom: none;
+        }
+
+        h4, h5, h6 {
+            &:before {
+                content: '';
+            }
+        }
+
+        a {
+            text-decoration: none;
+            padding-bottom: 2px;
+            border-bottom: 1px solid $gray;
+
+            &:hover {
+                color: $green;
+                border-color: $green;
+                opacity: 1;
+            }
+
+            &.img-link {
+                border-bottom: 0;
+            }
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1.46em;
+        }
+
+    }
+
+    .entry-extra:after {
+      display: table;
+      content: ' ';
+      clear: both;
+    }
+
+    .entry-tags {
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .tag {
+        text-decoration: none;
+        margin-right: 6px;
+        font-size: 0.8rem;
+
+        &:before {
+            content: '#';
+            color: $gray
+        }
+    }
+
+    // todo
+    .social-button {
+      float: right;
+    }
+
+    .entry-comments {
+      padding: 30px 0;
+      background: #fafafa;
+      border-top: 1px solid #ddd;
+    }
+
+
+}

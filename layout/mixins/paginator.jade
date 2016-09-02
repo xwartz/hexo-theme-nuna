@@ -1,0 +1,32 @@
+
+mixin archive()
+    //- - var prevIcon = '<i class="fa icon-next">'
+    - var prevIcon = '<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"> <g transform="translate(0, 0)"> <circle fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="12" cy="12" r="11" stroke-linejoin="miter"></circle> <polyline data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 14,16 10,12 14,8 " stroke-linejoin="miter"></polyline> </g> </svg>'
+    - var nextIcon = '<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"> <g transform="translate(0, 0)"> <circle fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="12" cy="12" r="11" stroke-linejoin="miter"></circle> <polyline data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 10,8 14,12 10,16 " stroke-linejoin="miter"></polyline> </g> </svg>'
+    - var prev = page.prev_link
+    - var next = page.next_link
+    .paginator
+        if page.prev
+            a.prev(href=url_for(prev))
+                != __('prev')
+        if page.next
+            a.next(href=url_for(next))
+                != __('next')
+
+
+mixin home()
+    .paginator
+        a.all(href=url_for(theme.menu.archive))
+            != 'More'
+
+
+mixin post()
+    - var prev = page.prev;
+    - var next = page.next;
+    .paginator
+        if prev
+            a.previous(href=url_for(prev.path))
+              != prev.title
+        if next
+            a.next(href=url_for(next.path))
+              != next.title

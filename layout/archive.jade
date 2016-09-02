@@ -1,0 +1,12 @@
+extends partial/layout
+
+block container
+    include mixins/post
+    +archive()
+
+block pagination
+    include mixins/paginator
+    +archive()
+
+block copyright
+    include partial/copyright

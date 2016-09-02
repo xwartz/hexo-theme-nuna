@@ -1,0 +1,24 @@
+menu:
+    home: /
+    archive: /archives/
+    about: /about/
+
+favicon: /logo.png
+logo: /logo.png
+
+# 首页文章默认封面路径
+thumb: /thumb/
+
+# Comment
+# e.g disqus: seansun
+disqus: pupa
+duoshuo:
+
+# Analytics
+# google-analytics:
+ga: UA-69822347-1
+# baidu-analytics:
+# ba: //hm.baidu.com/hm.js?a36e15d9e2adec9a21fcdd9f686b1ed2
+
+# Copyright Infomation
+startyear: 2015

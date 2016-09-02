@@ -1,0 +1,16 @@
+//- Single Page
+mixin page(item)
+    .post.page
+        article.hentry(itemscope itemtype='http://schema.org/Article')
+            if item.image
+                .entry-cover(itemprop='image' style= 'background-image: url(#{item.image})')
+
+            .container
+                .entry-header
+                    h1.entry-title
+                        != item.title
+                    .entry-description
+                        != item.excerpt
+
+                .entry-content(itemprop='articleBody')
+                    != item.more

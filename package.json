@@ -1,22 +1,40 @@
 {
-  "name": "about",
+  "name": "hexo-theme-nuna",
   "version": "1.0.0",
-  "description": "About me",
+  "description": "Yet another hexo theme.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "build": "gulp sass"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/xwartz/about.git"
+    "url": "git+ssh://git@github.com/xwartz/hexo-theme-nuna.git"
   },
   "keywords": [
-    "xwartz"
+    "hexo-theme",
+    "theme",
+    "hexo",
+    "nuna"
   ],
   "author": "xwartz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xwartz/about/issues"
+    "url": "https://github.com/xwartz/hexo-theme-nuna/issues"
   },
-  "homepage": "https://github.com/xwartz/about#readme"
+  "homepage": "https://github.com/xwartz/hexo-theme-nuna#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.3.1",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-react": "^6.1.2",
+    "eslint-plugin-standard": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1"
+  }
 }

@@ -1,0 +1,11 @@
+@media print {
+  header,
+  footer,
+  .entry-extra,
+  .entry-comments,
+  .hentry .entry-description,
+  .hentry .entry-footer,
+  .hentry .entry-meta {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+header {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+
+    a {
+        color: #aaa;
+    }
+
+    .container {
+        height: 78px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: block;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .span-holder {
+        flex: 1;
+    }
+
+    nav {
+
+        a {
+            margin-left: 2rem;
+        }
+    }
+
+}
