@@ -1,10 +1,14 @@
 .archive {
-    max-width: 762px;
-    margin: 0 auto;
-    margin-top: 5rem;
-    border: $border;
-    border-radius: 3px;
-    background-color: #fff;
+    // background-color: #fff;
+
+    .container {
+        max-width: 762px;
+        margin-top: 5rem;
+        border: $border;
+        border-radius: 3px;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .entry-header,
     article {

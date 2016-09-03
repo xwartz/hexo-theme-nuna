@@ -1,7 +1,4 @@
 
-//- 生成随机不重复数
-- var thumbs = [0,1,2,3,4,5,6,7,8,9].sort(function(){return 0.5 - Math.random()})
-
 mixin postInfo(item)
   .entry-meta
     time.updated(itemprop='datePublished' datetime=full_date(item.date, 'dddd, MMMM Do YYYY, h:mm:ss a'))
@@ -9,52 +6,10 @@ mixin postInfo(item)
     em.post-count
       != wordcount(item.content) + ' words'
 
-mixin postCover(item, flag)
-  article.entry-item(itemscope itemtype='http://schema.org/Article')
-    if flag
-        - var defthumb = theme.thumb + 'thumb-' + thumbs.pop() + '.png'
-        - var coverUrl = item.thumb ? item.path + item.thumb : url_for(defthumb)
-        .post-thumb(itemprop='thumb' style= 'background-image: url(#{coverUrl})')
-
-    a(href= url_for(item.path) itemprop='url')
-      h3.post-name(itemprop='name')
-        != item.title
-      .post-description(itemprop='description')
-        != item.excerpt
-
-//- Index Page
-mixin home()
-    .container.home
-        .entry-header
-            h1.entry-title
-                != config.title
-            p.entry-description
-                != config.description
-        .entry-list
-            - page.posts.each(function (item) {
-                +postCover(item, true)
-            - })
-
-//- Archive Page
-mixin archive()
-    .archive
-        - var year = 0
-        - var change = false
-
-        - page.posts.each(function (item) {
-            - var d = date(item.date, 'MMM, YYYY')
-            - change = year !== d
-            - year = change ? d : year
-            if change
-                .entry-header
-                    h2.entry-title
-                        != year
-            +postCover(item)
-        - })
 
 //- Post Page
 mixin post(item)
-    .post
+    div(class='post #{item.layout}')
         article.hentry(itemscope itemtype='http://schema.org/Article')
             if item.cover
                 .entry-cover(itemprop='image' style= 'background-image: url(#{item.cover})')
@@ -65,13 +20,17 @@ mixin post(item)
                         != item.title
                     .entry-description
                         != item.excerpt
-                    +postInfo(item)
+                    if item.layout == 'post'
+                        +postInfo(item)
+
                 .entry-content(itemprop='articleBody')
                     != item.more
-                .entry-extra
-                    .entry-tags
-                        if item.tags && item.tags.length
-                            - item.tags.each(function(tag) {
-                                a.tag(href=url_for(tag.path))
-                                    != tag.name
-                            - })
+
+                if item.layout == 'post'
+                    .entry-extra
+                        .entry-tags
+                            if item.tags && item.tags.length
+                                - item.tags.each(function(tag) {
+                                    a.tag(href=url_for(tag.path))
+                                        != tag.name
+                                - })

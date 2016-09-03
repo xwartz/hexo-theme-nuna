@@ -7,7 +7,7 @@ header
 
         nav
             each value, key in theme.menu
-                - var re = /^(http|https):\/\/*/gi;
+                - var re = /^(http|https):\/\/*/g
                 - var tar = re.test(value) ? '_blank' : '_self'
                 a(href=url_for(value) target=tar)
                     i(class='fa icon-#{key}')

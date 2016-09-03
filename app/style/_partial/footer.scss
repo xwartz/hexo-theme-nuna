@@ -2,6 +2,12 @@ footer {
     display: flex;
     justify-content: center;
     border-top: $border;
-    margin-top: 4rem;
-    background-color: #fff;
+    // margin-top: 4rem;
+    // background-color: #fff;
+    color: #878787;
+    font-size: 0.9rem;
+
+    a {
+        color: #878787;
+    }
 }

@@ -1,5 +1,7 @@
+
 if theme.duoshuo
-    .ds-thread(data-thread-key=page.path, data-title=page.title, data-url=page.permalink, data-author-key='1')
+    .entry-comments
+        .container.ds-thread(data-thread-key=page.path, data-title=page.title, data-url=page.permalink, data-author-key='1')
     script.
         var duoshuoQuery = {short_name:"#{theme.duoshuo}"};
         (function() {
@@ -7,13 +9,14 @@ if theme.duoshuo
             ds.type = 'text/javascript';ds.async = true;
             ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
             ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0] 
+            (document.getElementsByTagName('head')[0]
              || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
 
 
 if theme.disqus
-    #disqus_thread
+    .entry-comments
+        #disqus_thread.container
     script.
         var disqus_shortname = '#{theme.disqus}';
         var disqus_identifier = '#{page.path}';

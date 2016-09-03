@@ -1,0 +1,50 @@
+
+//- 生成随机不重复数
+- var thumbs = theme.thumbs.sort(function(){return 0.5 - Math.random()})
+
+mixin postCover(item, showThumb)
+  article.entry-item(itemscope itemtype='http://schema.org/Article')
+    if showThumb
+        - var pt = thumbs.pop(); thumbs.unshift(pt)
+        - var re = /^(http|https):\/\/*/g
+        - var defthumb = re.test(pt) ? pt : url_for(pt)
+        - var coverUrl = item.thumb ? item.path + item.thumb : defthumb
+        .post-thumb(itemprop='thumb' style= 'background-image: url(#{coverUrl})')
+
+    a(href= url_for(item.path) itemprop='url')
+      h3.post-name(itemprop='name')
+        != item.title
+      .post-description(itemprop='description')
+        != item.excerpt
+
+//- Index Page
+mixin home()
+    .home
+        .container
+            .entry-header
+                h1.entry-title
+                    != config.title
+                p.entry-description
+                    != config.description
+            .entry-list
+                - page.posts.each(function (item) {
+                    +postCover(item, true)
+                - })
+
+//- Archive Page
+mixin archive()
+    .archive
+        .container
+            - var year = 0
+            - var change = false
+
+            - page.posts.each(function (item) {
+                - var d = date(item.date, 'MMM, YYYY')
+                - change = year !== d
+                - year = change ? d : year
+                if change
+                    .entry-header
+                        h2.entry-title
+                            != year
+                +postCover(item)
+            - })

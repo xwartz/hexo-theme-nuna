@@ -1,5 +1,3 @@
-$base-bg: #fafafa;
-$base-link-color: #434344;
 
 html, body {
     padding: 0;
@@ -14,13 +12,14 @@ body {
     font-style: normal;
     color: $black;
     line-height: 1.75;
-    background-color: $base-bg;
+    // background-color: $base-bg;
     text-rendering: optimizeLegibility;
+    transition: all .3s linear;
 }
 
 a {
     color: $base-link-color;
-    transition: all 0.25s ease-in;
+    transition: all 0.3s linear;
     text-decoration: none;
 
     &:hover {

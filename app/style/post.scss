@@ -4,7 +4,7 @@ $gray: #999;
 
     article {
         font-size: 1.1rem;
-        background-color: #fff;
+        // background-color: #fff;
     }
 
     .container {
@@ -16,8 +16,13 @@ $gray: #999;
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         min-height: 10rem;
+        transition: all .3s linear;
+
+        &:hover {
+            opacity: 0.9;
+        }
     }
 
     .entry-header {
@@ -135,17 +140,4 @@ $gray: #999;
             color: $gray
         }
     }
-
-    // todo
-    .social-button {
-      float: right;
-    }
-
-    .entry-comments {
-      padding: 30px 0;
-      background: #fafafa;
-      border-top: 1px solid #ddd;
-    }
-
-
 }

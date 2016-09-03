@@ -1,3 +1,4 @@
+
 extends partial/layout
 
 block site_title
@@ -8,7 +9,10 @@ block description
     meta(name="description", content=desc)
 
 block container
-    include mixins/page
-    +page(page)
+    include mixins/post
+    +post(page)
+
 block copyright
     include partial/copyright
+    include partial/canvas
+
