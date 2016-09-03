@@ -1,5 +1,6 @@
 .pupa {
-  // font: 400 18px/1.75 "Georgia", "Xin Gothic", "PingFang TC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  line-height: 1.75;
 }
 
 ::-moz-selection {
@@ -19,7 +20,7 @@
     h4,
     h5,
     h6 {
-      font-family: "Georgia", "Xin Gothic", "PingFang TC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+      font-family: "Georgia", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
     }
 }
 
