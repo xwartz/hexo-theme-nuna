@@ -8,7 +8,8 @@ mixin postCover(item, showThumb)
         - var pt = thumbs.pop(); thumbs.unshift(pt)
         - var re = /^(http|https):\/\/*/g
         - var defthumb = re.test(pt) ? pt : url_for(pt)
-        - var coverUrl = item.thumb ? item.path + item.thumb : defthumb
+        - var thumb = re.test(item.thumb) ? item.thumb : item.path + item.thumb
+        - var coverUrl = item.thumb ? thumb : defthumb
         .post-thumb(itemprop='thumb' style= 'background-image: url(#{coverUrl})')
 
     a(href= url_for(item.path) itemprop='url')
