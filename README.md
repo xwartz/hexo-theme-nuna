@@ -6,9 +6,9 @@
 
 ## 预览
 
-![](http://ww3.sinaimg.cn/large/65e4f1e6gw1f7ir0cdquvj21kw1paali.jpg)
+http://ww3.sinaimg.cn/large/65e4f1e6gw1f7ir0cdquvj21kw1paali.jpg
 
-![](http://ww1.sinaimg.cn/large/65e4f1e6gw1f7ir6jdq5vj21kw1ex0vc.jpg)
+http://ww1.sinaimg.cn/large/65e4f1e6gw1f7ir6jdq5vj21kw1ex0vc.jpg
 
 ## 安装
 
