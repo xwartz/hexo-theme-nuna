@@ -8,11 +8,13 @@ block description
     - var desc = page.desc || page.title + ' - ' + config.author;
     meta(name="description", content=desc)
 
+block header
+    include partial/header
+
 block container
     include mixins/post
     +post(page)
 
-block copyright
-    include partial/copyright
+block canvas
     include partial/canvas
 

@@ -1,4 +1,8 @@
 extends partial/layout
+
+block header
+    include partial/header
+
 block container
     include mixins/posts
     +home()
@@ -6,6 +10,3 @@ block container
 block pagination
     include mixins/paginator
     +home()
-
-block copyright
-    include partial/copyright

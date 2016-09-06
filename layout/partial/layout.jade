@@ -3,10 +3,12 @@ html(lang=config.language prefix='og: http://ogp.me/ns#')
     head
         include head
     body.pupa
-        include header
+        block header
         main
             block container
             block pagination
         footer
-            block copyright
+            include copyright
         include scripts
+
+    block canvas
