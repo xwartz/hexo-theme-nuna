@@ -27,7 +27,11 @@ duoshuo: xwartz
 # google-analytics:
 ga: UA-69822347-1
 # baidu-analytics:
-# ba: //hm.baidu.com/hm.js?a36e15d9e2adec9a21fcdd9f686b1ed2
+ba: //hm.baidu.com/hm.js?b9e5254ddb0a9c4c4cd158df0d05a54c
+# qq mta
+qq:
+    sid: 500303098
+    cid: 500303108
 
 # Copyright Infomation
 startyear: 2015
