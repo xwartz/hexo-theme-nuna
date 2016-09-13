@@ -87,13 +87,13 @@
 }
 
 .all {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
+    width: 6rem;
+    height: 5rem;
+    border-radius: 30%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
     color: $black;
 }
