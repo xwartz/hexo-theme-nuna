@@ -1,23 +1,32 @@
 .photo {
     article {
         .entry-content {
-            padding-top: 2rem;
+            padding-top: 1rem;
             padding-bottom: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -3%;
         }
 
         img {
             position: relative;
             display: block;
-            margin: 0.5rem auto;
-            padding: 10px;
-            border: $border;
-            border-radius: 5px;
-            background-color: #fff;
+            // margin: 0.5rem auto;
+            // padding: 10px;
+            // border: $border;
+            // border-radius: 5px;
+            // background-color: #fff;
 
+            cursor: pointer;
             cursor: zoom-in;
             cursor: -moz-zoom-in;
             cursor: -webkit-zoom-in;
             transition: all .2s linear;
+            flex: 1 0 auto;
+            width: 220px;
+            height: 220px;
+            margin-top: 3%;
+            margin-left: 3%;
 
             &.zoomed {
                 cursor: zoom-out;
@@ -33,7 +42,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #000;
     opacity: 1;
     transition: all .2s linear;
 

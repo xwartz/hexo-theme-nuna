@@ -25,14 +25,13 @@
 
     var stop = document.body.scrollTop
     var otop = el.offsetTop
-
-    var oT = stop - otop
-    var ooT = (ch - el.height) / 2
+    var oleft = el.offsetLeft
 
     // 移动距离
-    var tt = oT + ooT
+    var oT = stop - otop + (ch - el.height) / 2
+    var oL = (cw - el.width) / 2 - oleft
 
-    el.style.transform = 'translate(0,' + tt + 'px' + ')' + 'scale(' + r + ',' + r + ') '
+    el.style.transform = 'translate(' + oL + 'px,' + oT + 'px' + ')' + 'scale(' + r + ',' + r + ') '
   }
 
   var removeTransform = function (el) {
