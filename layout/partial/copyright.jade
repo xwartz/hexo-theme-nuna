@@ -1,5 +1,6 @@
 .copyright.container
     - var currentDate = new Date();
     - var year = currentDate.getFullYear();
-    - year = year == theme.startyear ? year : theme.startyear + ' - ' + year;
+    - var start = config.startYear;
+    - year = year == start ? year : (start ? start + ' - ' + year : year);
     p © Copyright #{year} by #[a(href=config.url)!= config.author].

@@ -115,13 +115,16 @@ cover: http://ww3.sinaimg.cn/large/7853084cgw1f7vueqesr5j21jk0uh446.jpg
 
 ```
 
-
 ## 更新
 
 ``` bash
 cd themes/nuna
 git pull
 ```
+
+## 贡献
+
+欢迎提交 [pr](https://github.com/xwartz/hexo-theme-nuna/pulls)
 
 ## License
 
