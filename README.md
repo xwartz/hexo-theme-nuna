@@ -59,9 +59,9 @@ qq:
 
 ### 文章
 
-1. 新建文章：`hexo new post 'hello-world'`
+* 新建文章：`hexo new post 'hello-world'`
 
-2. 自定义图片
+* 自定义图片
 
 ```markdown
 <!-- 首页封面图 -->
@@ -70,26 +70,27 @@ thumb: http://ww3.sinaimg.cn/large/7853084cgw1f7vttm4rr9j20dm0amt9i.jpg
 cover: http://ww3.sinaimg.cn/large/7853084cgw1f7vueqesr5j21jk0uh446.jpg
 ```
 
-3. 显示文章简介
+* 显示文章简介
 
 ```markdown
 <!-- Excerpt in index -->
+description: hello world
 + <!-- more -->
 <!-- The rest of contents -->
 ```
 
 ### 个人页
 
-1. 新建个人页：`hexo new page 'about'`
+* 新建个人页：`hexo new page 'about'`
 
-2. 自定义图片
+* 自定义图片
 
 ```markdown
 <!-- 文章大图 -->
 cover: http://ww3.sinaimg.cn/large/7853084cgw1f7vueqesr5j21jk0uh446.jpg
 ```
 
-3. 显示简介
+* 显示简介
 
 ```markdown
 <!-- Excerpt in index -->
@@ -99,9 +100,9 @@ cover: http://ww3.sinaimg.cn/large/7853084cgw1f7vueqesr5j21jk0uh446.jpg
 
 ### 相册
 
-1. 新建相册：`hexo new photo 'photo'`
+* 新建相册：`hexo new photo 'photo'`
 
-2. 编辑图片
+* 编辑图片
 
 ```markdown
 
