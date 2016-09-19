@@ -5,6 +5,7 @@ script(async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_
 - var ga = theme.ga
 - var ba = theme.ba
 - var qq = theme.qq
+- var go = theme.go
 if ga
     script
         | (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',
@@ -33,3 +34,21 @@ if qq
         | }())
 
 //- script(async src=url_for("script/analytics.js"))
+
+if go
+    script
+        | var _vds = _vds || [];
+        | window._vds = _vds;
+        | (function(){
+        |   ;_vds.push(['setAccountId',
+        != '"' + go + '"'
+        |   ]);
+        |   (function() {
+        |       var vds = document.createElement('script');
+        |       vds.type='text/javascript';
+        |       vds.async = true;
+        |       vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+        |       var s = document.getElementsByTagName('script')[0];
+        |       s.parentNode.insertBefore(vds, s);
+        |   })();
+        | })();

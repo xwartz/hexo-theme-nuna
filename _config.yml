@@ -31,6 +31,8 @@ ba: //hm.baidu.com/hm.js?b9e5254ddb0a9c4c4cd158df0d05a54c
 qq:
     sid: 500303098
     cid: 500303108
+# growingio
+go: 90b580e047dd0007
 
 # theme version
 version: 1.0.0
