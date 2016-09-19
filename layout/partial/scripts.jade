@@ -33,3 +33,8 @@ if qq
         | }())
 
 //- script(async src=url_for("script/analytics.js"))
+
+script(async src="https://cdn.rawgit.com/Easyfood/pageAccelerator/master/dist/page-accelerator.min.js")
+
+script
+    | window.onload = function() { pageAccelerator && pageAccelerator() }
