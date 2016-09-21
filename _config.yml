@@ -20,7 +20,7 @@ thumbs: [/thumb/thumb-0.png,
 
 # Comment
 # disqus: pupa
-duoshuo: xwartz
+# duoshuo: xwartz
 
 # Analytics
 # google-analytics:
@@ -35,4 +35,4 @@ qq:
 go: 90b580e047dd0007
 
 # theme version
-version: 1.0.0
+version: 1.0.1
