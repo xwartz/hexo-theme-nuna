@@ -7,16 +7,16 @@ favicon: /favicon.ico
 logo: /logo.png
 
 # 首页文章默认封面
-thumbs: [/thumb/thumb-0.png,
-        /thumb/thumb-1.png,
-        /thumb/thumb-2.png,
-        /thumb/thumb-3.png,
-        /thumb/thumb-4.png,
-        /thumb/thumb-5.png,
-        /thumb/thumb-6.png,
-        /thumb/thumb-7.png,
-        /thumb/thumb-8.png,
-        /thumb/thumb-9.png]
+thumbs: [//ww4.sinaimg.cn/large/801b780agw1f8afxvijp9j208c08cjsa.jpg,
+        //ww1.sinaimg.cn/large/801b780agw1f8afxv7r1uj208c08cmz0.jpg,
+        //ww1.sinaimg.cn/large/801b780agw1f8afxumedlj208c08cgmy.jpg,
+        //ww1.sinaimg.cn/large/801b780agw1f8afxu0yh3j208c08cjsi.jpg,
+        //ww3.sinaimg.cn/large/801b780agw1f8afxtihj7j208c08cwfh.jpg,
+        //ww4.sinaimg.cn/large/801b780agw1f8afxsv423j20b408cgmh.jpg,
+        //ww4.sinaimg.cn/large/801b780agw1f8afxsfoomj20b407djs6.jpg,
+        //ww1.sinaimg.cn/large/801b780agw1f8afxs19ppj208c08cdg4.jpg,
+        //ww1.sinaimg.cn/large/801b780agw1f8afxrj357j208c08cq3n.jpg,
+        //ww4.sinaimg.cn/large/801b780agw1f8afxqrz8xj208c08cdga.jpg]
 
 # Comment
 # disqus: pupa
@@ -36,3 +36,9 @@ go: 90b580e047dd0007
 
 # theme version
 version: 1.0.2
+# theme branch
+branch: next
+# theme font cdn url
+font: //at.alicdn.com/t/font_1472710214_6648843.css
+# theme style cdn url
+css: //cdn.rawgit.com/xwartz/hexo-theme-nuna/next/source/style/main.css

@@ -6,7 +6,7 @@ mixin postCover(item, showThumb)
   article.entry-item(itemscope itemtype='http://schema.org/Article')
     if showThumb
         - var pt = thumbs.pop(); thumbs.unshift(pt)
-        - var re = /^(http|https):\/\/*/g
+        - var re = /^(http|https|\/\/)/
         - var defthumb = re.test(pt) ? pt : url_for(pt)
         - var thumb = re.test(item.thumb) ? item.thumb : item.path + item.thumb
         - var coverUrl = item.thumb ? thumb : defthumb
