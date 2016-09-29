@@ -26,7 +26,7 @@ thumbs: [/thumb/thumb-0.png,
 # google-analytics:
 ga: UA-69822347-1
 # baidu-analytics:
-ba: //hm.baidu.com/hm.js?b9e5254ddb0a9c4c4cd158df0d05a54c
+# ba: //hm.baidu.com/hm.js?b9e5254ddb0a9c4c4cd158df0d05a54c
 # qq mta
 qq:
     sid: 500303098
