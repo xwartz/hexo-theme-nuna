@@ -4,7 +4,7 @@
 
 ## 预览
 
-在线访问 <https://xwartz.github.com/pupa>
+在线访问 <https://xwartz.github.com/blog>
 
 ![qrcode](http://ww2.sinaimg.cn/large/7853084cgw1f7whn1tirsj20am0amwfd.jpg)
 
@@ -14,7 +14,7 @@
 npm install
 ```
 
-各种依赖参考 [pupa](https://github.com/xwartz/pupa)
+各种依赖参考 [Blog](https://github.com/xwartz/blog)
 
 ## 启用
 
