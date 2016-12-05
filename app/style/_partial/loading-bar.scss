@@ -26,7 +26,7 @@
     z-index: 800;
     background: $green;
     transform: translateX(100%);
-    .isloading {
+    &.isloading {
         display: block;
         animation: shift-rightwards 1s ease-in-out infinite;
         animation-delay: .8s;
