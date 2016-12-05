@@ -57,4 +57,10 @@ if go
 //- pageAccelerator
 script(async src="//raw.githack.com/Easyfood/pageAccelerator/master/dist/page-accelerator.min.js")
 script
-    | window.onload = function() { window.pageAccelerator && pageAccelerator() }
+    | window.onload = function() {
+    |   var loadingBar = document.getElementsByClassName('loading-bar')[0]
+    |   window.pageAccelerator && pageAccelerator({
+    |       beforeLoading: function() { loadingBar.classList.add('isloading') },
+    |       afterLoading: function() { loadingBar.classList.remove('isloading') }}
+    |   )
+    | }
