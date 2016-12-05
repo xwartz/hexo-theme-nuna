@@ -1,0 +1,34 @@
+@keyframes shift-rightwards {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    40% {
+        transform: translateX(0)
+    }
+
+    60% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(100%)
+    }
+}
+
+.loading-bar {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    z-index: 800;
+    background: $green;
+    transform: translateX(100%);
+    &.isloading {
+        display: block;
+        animation: shift-rightwards 1s ease-in-out infinite;
+        animation-delay: .8s;
+    }
+}
