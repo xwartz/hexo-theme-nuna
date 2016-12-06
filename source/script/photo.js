@@ -1,5 +1,5 @@
 ;(function () {
-  window.onload = function () {
+  window.addEventListener('load', function (event) {
     if (!document.getElementsByClassName('photo').length) return
 
     var delay = 200
@@ -73,5 +73,5 @@
         showZoome()
       }
     })
-  }
+  })
 }())
