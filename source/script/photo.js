@@ -1,6 +1,4 @@
 ;(function () {
-  if (!document.getElementsByClassName('photo').length) return
-
   var delay = 200
   var removeEffect = function (el, cl) {
     el.className = el.className.replace(cl, '')
@@ -58,6 +56,8 @@
   }
 
   document.body.addEventListener('click', function (event) {
+    if (!document.getElementsByClassName('photo').length) return
+
     var target = event.target
     var c = 'zoomed'
     if (target.nodeName === 'IMG') {
