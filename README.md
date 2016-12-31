@@ -40,7 +40,7 @@ thumbs: [/thumb/thumb-0.png,
         /thumb/thumb-9.png]
 
 # 评论支持 disqus、多说
-# disqus: pupa
+# disqus: xwartz
 duoshuo: xwartz
 
 # 统计支持 谷歌、百度、qq
@@ -125,6 +125,11 @@ git pull
 ## 贡献
 
 欢迎提交 [pr](https://github.com/xwartz/hexo-theme-nuna/pulls)
+
+## 更新日志
+
+[./CHANGELOG.md](CHANGELOG.md)
+
 
 ## License
 
