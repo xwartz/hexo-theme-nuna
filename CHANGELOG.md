@@ -1,3 +1,7 @@
+## 1.1.1
+1. 使用 travis-ci 自动构建
+2. scrollbar 背景色变淡
+
 ## 1.1.0
 1. 文章页面不再显示前后文
 2. 去除评论功能，引入 [pageAccelerator](https://github.com/Easyfood/pageAccelerator) 之后，造成挺多问题，索性去除了评论功能
